@@ -1,16 +1,45 @@
-# React + Vite
+# 🎲 Lottery Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple **Python-based Lottery Game** that randomly generates a 3-digit lottery ticket number.  
+If the **sum of all digits equals 15**, you win the lottery and get the prize! 💰
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧩 Game Rules
 
-## React Compiler
+- Each lottery ticket contains a **3-digit number**.
+- The number is **generated randomly**.
+- If the **sum of all digits is 15**, you win the lottery.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Example:
 
-## Expanding the ESLint configuration
+| Ticket | Sum | Result |
+|:-------:|:----:|:--------:|
+| 7 7 7 | 21 | ❌ Lose |
+| 4 6 5 | 15 | ✅ Win |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧠 Logic Behind the Game
+
+1. Generate a random 3-digit number using Python's `random` module.  
+2. Split the number into individual digits.  
+3. Calculate the **sum** of those digits.  
+4. Check if the sum equals **15**.  
+5. Display the result — “You Win!” or “Better Luck Next Time!”
+
+---
+
+## 🧰 Technologies Used
+
+- **Python 3**
+- **Random module** (for number generation)
+
+---
+
+## 🚀 How to Run the Project
+
+### 1. Clone this repository
+```bash
+git clone https://github.com/your-username/lottery-game.git
+
